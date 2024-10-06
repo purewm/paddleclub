@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_social
+    - node.type.listing
+    - paragraphs.paragraphs_type.social
+  module:
+    - entity_reference_revisions
+id: node.listing.field_listing_social
+field_name: field_listing_social
+entity_type: node
+bundle: listing
+label: Social
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social: social
+    negate: 0
+    target_bundles_drag_drop:
+      listing_description:
+        weight: 3
+        enabled: false
+      social:
+        weight: 5
+        enabled: true
+      social_icon:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

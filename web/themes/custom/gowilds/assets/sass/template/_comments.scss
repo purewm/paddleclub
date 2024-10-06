@@ -1,0 +1,281 @@
+/* This is required to win over specificity of #content h2 */
+.links .comment-add{
+  display: none;
+}
+#node-single-comment{
+  	margin-top: 30px;
+	h2 {
+	 margin-top: 30px;
+	  margin-bottom: 30px;
+	  font-size: 22px; 
+	  position: relative;
+	  padding-bottom: 15px;
+		&:before{
+		  content: "";
+		  position: absolute;
+		  @include size(50px, 2px);
+		  background: $theme-color;
+		  left: 0;
+		  bottom: 0;  
+		  z-index: 1;
+		}
+  }  
+  	#comment-form{
+	 	.form-item{
+			margin-bottom: 26px;
+			&.js-form-type-textarea{
+			  	margin: 0;
+			}
+			label{
+			  	display: block;
+			  	color: $headings-color;
+			  	font-weight: 600;
+			  	font-size: 16px;
+			}
+			.ck-voice-label, #edit-comment-body-0-format-help{
+				display: none;
+			}
+			.ck-editor__main .ck-content{
+				min-height: 100px;
+				line-height: 14px;
+			}
+	 	}
+  	}
+  input[type*='text']:not(.chosen-search-input), textarea{
+	 width: 100%;
+	 background: $bg-gray;
+	 min-height: 50px;
+	 padding: 0 15px;
+	 box-shadow: none;
+	 border: 0;
+	 border-radius: 6px;
+	 line-height: 22px;
+  }
+  .button{
+	 font-size: 16px;
+	 font-weight: 600;
+	 padding: 14px 25px;
+  }
+}
+
+.comment-wrapper h2.comment-form__title {
+  margin-bottom: 1em;
+}
+.field-node--comment {
+  font-size: 0.934em;
+}
+.comment {
+  padding-left: 100px;
+  position: relative;
+  .author-image{
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 font-size: 70px;
+	 line-height: 1;
+	 color: $body-color;
+  }
+  .comment__meta{
+
+  }
+}
+
+.comment__attribution img {
+  border: 1px solid #d3d7d9;
+}
+/* This is required to win over specificity of .field--type-image img */
+.comment .field--name-user-picture img {
+  margin: 0;
+}
+.comment__author .username {
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: $black;
+  font-weight: 700;
+  font-size: 12px;
+}
+.comment__author {
+  margin: 0 0 10px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: $link-color;
+  font-weight: 700;
+  font-size: 17px;
+}
+.comment__time {
+  margin-bottom: 15px;
+  color: #999;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  position: relative;
+  &:before{
+	 content: '';
+	 width: 12px;
+	 height: 2px;
+	 background: $theme-color;
+	 display: inline-block;
+	 margin-bottom: 3px;
+	 margin-right: 8px;
+  }
+
+}
+.comment__permalink {
+  font-size: 0.733em;
+  line-height: 1.2;
+}
+.comment__content {
+  position: relative;
+  display: block;
+  padding: 10px 25px 10px 25px;
+  vertical-align: top;
+  width: 100%;
+  border: 1px solid #d3d7d9;
+  font-size: 0.929em;
+  line-height: 1.6;
+  word-break: break-all;
+  h3 a{
+	 font-size: 18px;
+	 font-weight: 700;
+  }
+  .links.inline{
+	 margin-top: 10px;
+	 list-style: none;
+	 padding: 0;
+	 > li{
+		float: none;
+		display: inline-block;
+		padding: 0;
+		padding-right: 5px;
+		a{
+		  text-transform: uppercase;
+		  font-weight: 700;
+		  font-size: 12px;
+		}
+	 }
+  }
+}
+
+.comment__content:before {
+  content: '';
+  position: absolute;
+  right: 100%; /* LTR */
+  top: 20px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #d3d7d9; /* LTR */
+  border-bottom: 20px solid transparent;
+}
+[dir="rtl"] .comment__content:before {
+  right: auto;
+  left: 100%;
+  border-right: none;
+  border-left: 20px solid #d3d7d9;
+}
+.comment__content:after {
+  content: '';
+  position: absolute;
+  right: 100%; /* LTR */
+  top: 20px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #fff; /* LTR */
+  border-bottom: 20px solid transparent;
+  margin-right: -1px; /* LTR */
+}
+[dir="rtl"] .comment__content:after {
+  right: auto;
+  left: 100%;
+  border-right: none;
+  border-left: 20px solid #fff;
+  margin-right: 0;
+  margin-left: -1px;
+}
+.comment__content h3 {
+  margin-top: 0.94em;
+  margin-bottom: 0.45em;
+  font-size: 1.171em;
+}
+.comment__content nav {
+  padding-top: 1px;
+}
+.indented {
+  margin-left: 40px; /* LTR */
+}
+[dir="rtl"] .indented {
+  margin-right: 40px;
+  margin-left: 0;
+}
+.comment .links {
+  padding: 0 0 0.25em 0;
+}
+.comment .links li {
+  padding: 0 0.5em 0 0; /* LTR */
+  font-size: 1.08em;
+}
+[dir="rtl"] .comment .links li {
+  padding: 0 0 0 0.5em;
+}
+.comment--unpublished {
+  margin-right: 5px; /* LTR */
+  padding: 5px 2px 5px 5px; /* LTR */
+  background: #fff4f4;
+}
+[dir="rtl"] .comment--unpublished {
+  margin-left: 5px;
+  margin-right: 0;
+  padding: 5px 5px 5px 2px;
+}
+
+/**
+ * @todo: unpublished nodes have class .node--unpublished.
+ * change this to .comment--unpublished.
+ */
+.unpublished .comment-text .comment-arrow {
+  border-left: 1px solid #fff4f4;
+  border-right: 1px solid #fff4f4;
+}
+.unpublished {
+  padding: 20px 15px 0;
+}
+.comment-footer {
+  display: table-row;
+}
+.comment--unpublished .comment__text:after,
+.node--unpublished .comment__text:after {
+  border-right-color: #fff4f4; /* LTR */
+}
+[dir="rtl"] .comment--unpublished .comment__content:after,
+[dir="rtl"] .node--unpublished .comment__content:after {
+  border-left-color: #fff4f4;
+}
+
+#comment-form{
+  margin-bottom: 20px;
+  h4, legend{
+    font-size: 16px;
+    font-weight: 600;
+    color: $headings-color;
+  }
+  .form-item{
+    margin-bottom: 20px;
+    label{
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    &.js-form-type-radio{
+      label{
+        display: inline-block;
+        width: auto;
+        margin-left: 6px;
+      }
+    }
+  }
+  #edit-date{
+    display: flex; 
+    input{
+      padding: 5px 10px;
+      border: 1px solid $border-color;
+      margin-right: 5px;
+    }
+  }
+}

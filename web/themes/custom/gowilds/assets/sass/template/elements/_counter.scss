@@ -1,0 +1,186 @@
+.milestone-one{
+   &__single{
+      position: relative;
+      padding: 40px 15px 30px;
+      box-shadow: 15px 30px 86px 0px rgba(0, 0, 0, 0.07);
+      text-align: center;
+      border-radius: 10px;
+      background: #fff;
+      margin-bottom: 30px;
+   }
+   &__icon{
+      width: 138px;
+      height: 138px;
+      border-radius: 50%;
+      color: $theme-color;
+      font-size: 68px;
+      line-height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      position: relative;
+      .icon {
+         position: relative;
+         z-index: 2;
+      }
+      &:after, &:before{
+         content: '';
+         width: 100%;
+         height: 100%;
+         background: $theme-color;
+         position: absolute;
+         z-index: 1;
+         left: 0;
+         top: 0;
+         border-radius: 50%;
+         transition: all 0.5s;
+      }
+      &:after{
+         opacity: 0;
+         transform: scale(1.2);
+      }
+      &:before{
+         opacity: 0.1;
+      }
+   }
+   &__content{
+      
+   }
+   &__number-inner{
+      font-size: 45px;
+      line-height: 1;
+      font-weight: 700;
+      color: $link-color;
+      margin-top: 25px;
+      display: inline-flex;
+   }
+   &__text{
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+      margin-bottom: 0;
+      color: $body-color;
+   } 
+   &__single{
+      &:hover,&:focus{
+         .milestone-one{
+            &__icon{
+               color: $white;
+               &:before{
+                  opacity: 0;
+               }
+               &:after{
+                  transform: scale(1);
+                  opacity: 1;
+               }
+            }
+         }
+      }
+   }
+}
+
+.milestone-two{
+   &__single{
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+   }
+   &__icon{
+      color: $theme-color; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: $white;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+      color: $theme-color;
+      font-size: 48px;
+      line-height: 1;
+   }
+   &__content{
+      display: inline-block;
+      text-align: left;
+   }
+   &__number-inner{
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 1;
+      margin-top: 30px;
+      color: $theme-color;
+      display: flex;
+   }
+   &__text{
+      font-size: 18px;
+      margin: 20px 0 0;
+      font-weight: 400;
+      line-height: 24px;
+   }
+   &__single{
+      &.text-light{
+         .milestone-two{
+            &__number-inner{
+               color: $white;
+            }
+         }
+      }
+      &:hover, &:focus{
+         .milestone-two__icon .icon{
+               animation: beat 1.5s ease 0s infinite;
+         }
+      }
+   }
+}
+
+.milestone-three{
+   &__single{
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   &__wrap{
+      
+   }
+   &__icon{
+      color: $theme-color;
+      font-size: 32px;
+      line-height: 1;
+   }
+   &__content{
+      display: block;
+      text-align: left;
+      float: none;
+      width: 100%;
+   }
+   &__number-inner{
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 1;
+      color: $theme-color;
+      display: flex;
+      @media (max-width: 1024px){
+         font-size: 38px;
+      }
+   }
+   &__text{
+      font-size: 16px;
+      margin: 10px 0 0;
+      font-weight: 600;
+      line-height: 22px;
+   } 
+   &__single{
+      &.text-light{
+         .milestone-three{
+            &__number-inner{
+               color: $white;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_social_link
+    - paragraphs.paragraphs_type.social
+id: paragraph.social.field_pg_social_link
+field_name: field_pg_social_link
+entity_type: paragraph
+bundle: social
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+.gsc-socials{
+  margin-bottom: 30px;
+  a {
+    color: $body-color;
+    text-decoration: none;
+    @include transition(all 0.5s ease 0s);
+    margin-right: 12px;
+    font-size: 14px;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover, &:focus, &:active{
+      color: $theme-color;
+    }
+    i{
+      color: $white;
+      @include size(40px, 40px);
+      @include border-radius(50%);
+      display: inline-block;
+      text-align: center;
+      line-height: 40px;
+      font-size: 14px;
+    }
+  }
+  &.style-2{
+    a {
+      margin-right: 8px;
+      i {
+        width: 40px;
+        height: 40px;
+        background: #EDEDED;
+        color: $link-color;
+      }
+      &:hover i{
+        background: $theme-color;
+        color: $white;
+      }
+    }
+  }
+}

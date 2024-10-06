@@ -1,0 +1,48 @@
+.progress-one{
+	&__single{
+		margin-bottom: 20px;
+	}
+	&__label{
+		font-size: 16px;
+		color: $headings-color;
+		font-weight: 700;
+  		margin-bottom: 5px;
+	}
+	&__content{
+		height: 10px;
+		border-radius: 0px;
+	}
+	&__bar{
+		height: 10px;
+		border-radius: 0px;
+	}
+	&__percentage{
+		top: -28px!important;
+	}
+	&__single{
+		&.style-2{
+			.progress-one__bar{
+				background: $theme-color-second!important;
+			}
+		}
+		&.style-3{
+			.progress-one__content{
+				background: #eee!important;
+			}
+			.progress-one__label{
+				color: $white;
+			}
+			.progress-one__bar{
+				background: $theme-color!important;
+			}
+			.progress-one__percentage{
+				color: $white;
+			}
+		}
+		&.style-4{
+			.progress-one__bar{
+				background: $black!important;
+			}
+		}
+	}
+}

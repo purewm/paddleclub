@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_included
+    - node.type.listing
+  module:
+    - text
+id: node.listing.field_listing_included
+field_name: field_listing_included
+entity_type: node
+bundle: listing
+label: 'Listing Included'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

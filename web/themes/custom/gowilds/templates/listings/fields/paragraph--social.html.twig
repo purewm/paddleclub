@@ -1,0 +1,7 @@
+{% set link %}{{content.field_pg_social_link}}{% endset %}
+{% set icon %}{{content.field_pg_social_icon}}{% endset %}
+<a href="{{ link|striptags|trim }}">
+   <i class="{{ icon|striptags|trim }}"></i>
+</a>
+
+

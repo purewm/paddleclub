@@ -1,0 +1,15 @@
+name: 'Webform REST API test'
+type: module
+description: 'Support module for webform REST API testing.'
+package: 'Webform Testing'
+core_version_requirement: ^10.3 || ^11
+dependencies:
+  - 'drupal:hal'
+  - 'drupal:rest'
+  - 'drupal:serialization'
+  - 'webform:webform'
+
+# Information added by Drupal.org packaging script on 2024-08-03
+version: '6.3.x-dev'
+project: 'webform'
+datestamp: 1722697606

@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social.field_pg_social_icon
+    - field.field.paragraph.social.field_pg_social_link
+    - paragraphs.paragraphs_type.social
+id: paragraph.social.default
+targetEntityType: paragraph
+bundle: social
+mode: default
+content:
+  field_pg_social_icon:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pg_social_link:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

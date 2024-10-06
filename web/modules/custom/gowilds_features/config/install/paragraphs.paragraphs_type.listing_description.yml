@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: listing_description
+label: 'Listing Description'
+icon_uuid: null
+icon_default: null
+description: 'Listing plan content.'
+behavior_plugins: {  }

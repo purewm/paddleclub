@@ -1,0 +1,12 @@
+name: 'Webform Scheduled Email Handler'
+type: module
+description: 'Provides the "Scheduled email" handler, which sends Webform submissions via scheduled email using cron.'
+package: Webform
+core_version_requirement: ^10.3 || ^11
+dependencies:
+  - 'webform:webform'
+
+# Information added by Drupal.org packaging script on 2024-08-03
+version: '6.3.x-dev'
+project: 'webform'
+datestamp: 1722697606

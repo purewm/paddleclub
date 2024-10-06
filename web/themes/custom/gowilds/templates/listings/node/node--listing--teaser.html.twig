@@ -1,0 +1,73 @@
+{%
+	set classes = [
+		'node',
+		'node-detail',
+		'node--type-' ~ node.bundle|clean_class,
+		node.isPromoted() ? 'node--promoted',
+		node.isSticky() ? 'node--sticky',
+		not node.isPublished() ? 'node--unpublished',
+		view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+		'clearfix',
+	]
+%}
+
+{% set conBody  %}{{ content.body }}{% endset %}
+{% set conAddress %}{{ node.field_listing_address.value }}{% endset %}
+{% set conVideo %}{{ node.field_listing_video.value }}{% endset %}
+
+<div class="listing-one__single teaser_1">
+	<div class="listing-one__wrap">  
+		<div class="listing-one__image">
+			{{ content.field_listing_image }}
+		</div>
+		<div class="listing-one__content">  
+			<div class="listing-one__content-inner">
+				<div class="listing-one__content-top">
+					<div class="listing-one__preview">
+						{% if content.field_listing_gallery %}
+							<div class="listing-one__gallery gallery-popup">{{ content.field_listing_gallery }}</div>
+						{% endif %}  
+						{% if content.field_listing_video|render %}
+							<div class="listing-one__video">
+								<a class="popup-video" href="{{ conVideo|trim }}"><i class="icon la la-video-camera"></i></a>
+							</div>
+						{% endif %}
+					</div>
+				<div class="listing-one__category">{{ content.field_listing_category }}</div>
+				</div>
+				<h3 class="listing-one__title"><a href="{{ url }}" rel="bookmark">{{ label }}</a></h3>
+				<div class="listing-one__meta">
+					{% if node.field_listing_address.value %}
+						<div class="listing-one__address"><i class="icon fas fa-map-marker-alt"></i>{{ conAddress|striptags }}</div>
+					{% endif %}
+
+					{% if node.field_listing_price.value %}
+						<div class="listing-one__price">
+							<i class="icon fa-solid fa-circle-dollar-to-slot"></i>
+							{{ 'From'|t }} <span class="price-new">{{node.field_listing_price.value}}</span>
+						</div>
+					{% endif %}
+				
+				</div>
+				<div class="listing-one__info">
+					<div class="listing-one__info-inner">
+						{% if node.field_listing_max_guests.value %}
+						<span class="listing-one__guests">
+							<i class="las la-user-friends"></i>
+							{{ node.field_listing_max_guests.value }}
+						</span>
+						{% endif %}
+						{% if node.field_listing_min_age.value %}
+						<span class="listing-one__age">
+							<i class="las la-user-plus"></i>
+							{{ node.field_listing_min_age.value }}
+						</span>
+						{% endif %}
+					</div>
+					<div class="listing-one__read-more"><a href="{{ url }}">{{ 'Explore'|t }}<i class="las la-arrow-right"></i></a></div>
+				</div>
+			</div>
+		</div>
+	</div> 
+  
+</div> 

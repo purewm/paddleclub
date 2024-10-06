@@ -1,0 +1,40 @@
+name: 'Gowilds Features'
+description: 'Gowilds Features - Import content type, field, view ... for Gowilds theme.'
+type: module
+core_version_requirement: ^9.4 || ^10 || ^11
+dependencies:
+  - better_exposed_filters
+  - block
+  - block_content
+  - comment
+  - contact
+  - datetime
+  - entity_reference_revisions
+  - field
+  - file
+  - filter
+  - gavias_hook_themer
+  - gavias_view
+  - google_map_field
+  - image
+  - imce
+  - mailchimp_signup
+  - menu_ui
+  - node
+  - options
+  - paragraphs
+  - path
+  - pathauto
+  - search
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+  - views_infinite_scroll
+  - webform
+  - config_update
+  - features
+  - admin_toolbar
+  - ludwig
+version: '2.0.0'

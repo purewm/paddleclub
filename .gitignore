@@ -1,0 +1,90 @@
+# Raj Persram of Pure Web Media
+# PaddleClub Drupal multisite Project
+
+# Ignore general system files (macOS)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# Icon files
+Icon?
+
+# Trashes folder used for temporary storage in macOS
+.Trashes
+
+# Drupal settings files
+/web/sites/*/settings.php
+/web/sites/*/services.yml
+/web/sites/*/settings.local.php
+/web/sites/sites.php
+
+# Ignore DDEV specific files generated at runtime
+/.ddev/
+
+# Add the template for shared configuration
+!.ddev/config.template.yaml
+
+# Ignore public and private files directories
+/web/sites/*/files
+/private/*
+
+# Ignore Composer vendor directory
+/vendor
+
+# Ignore Composer generated files
+composer.lock
+
+# Ignore dynamically generated folders
+/web/sites/*/private
+/web/sites/*/translations
+
+# Backup files
+*.sql
+*.tar.gz
+*.zip
+
+# Files related to development tools and caches
+/.env
+.env.*
+.vscode
+.idea
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore any local temporary or cache files
+/web/sites/default/files/php
+/web/sites/default/files/js
+/web/sites/default/files/css
+/tmp
+/web/sites/default/files/styles
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore SASS cache
+.sass-cache
+
+# Ignore Drush backup files
+/web/sites/*/drush-backups
+
+# Ignore backup files created by editors
+*~
+*.swp
+*.swo
+*.bak
+
+# Ignore config directories for multisite
+/web/sites/*/files/config_*
+
+# Ignoring Orbstack 
+/.orb
+
+# Ignore test, test result, and any debug output files
+test_output/
+*.test.result

@@ -1,0 +1,49 @@
+{%
+	set classes = [
+		'node',
+		'node-detail',
+		'node--type-' ~ node.bundle|clean_class,
+		node.isPromoted() ? 'node--promoted',
+		node.isSticky() ? 'node--sticky',
+		not node.isPublished() ? 'node--unpublished',
+		view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+		'clearfix',
+	]
+%}
+{% set conAddress %}{{ node.field_listing_address.value }}{% endset %}
+{% set conVideo %}{{ node.field_listing_video.value }}{% endset %}
+
+<div class="listing-two__single teaser_2">
+	<div class="listing-two__wrap">  
+		<div class="listing-two__image">
+			{{ content.field_listing_image }}
+		</div>
+		<div class="listing-two__content">  
+			<div class="listing-two__content-inner">
+				<div class="listing-two__preview">
+					{% if content.field_listing_gallery %}
+						<div class="listing-two__gallery gallery-popup">{{ content.field_listing_gallery }}</div>
+					{% endif %}  
+					{% if content.field_listing_video|render %}
+						<div class="listing-two__video">
+							<a class="popup-video" href="{{ conVideo|trim }}"><i class="icon la la-video-camera"></i></a>
+						</div>
+					{% endif %}
+				</div>
+				<h3 class="listing-two__title"><a href="{{ url }}" rel="bookmark">{{ label }}</a></h3>
+				<div class="listing-two__meta">
+					{% if node.field_listing_address.value %}
+						<div class="listing-two__address"><i class="icon fas fa-map-marker-alt"></i>{{ conAddress|striptags }}</div>
+					{% endif %}
+					{% if node.field_listing_price.value %}
+						<div class="listing-two__price">
+							<i class="icon fa-solid fa-circle-dollar-to-slot"></i>
+							{{ 'From'|t }} <span class="price-new">{{ node.field_listing_price.value }}</span></div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>  
+	
+</div>
+

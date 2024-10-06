@@ -1,0 +1,54 @@
+:root {
+  // Custom variable values only support SassScript inside `#{}`.
+  @each $color, $value in $colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
+
+  @each $color, $value in $theme-colors {
+    --#{$variable-prefix}#{$color}: #{$value};
+  }
+
+  // Use `inspect` for lists so that quoted items keep the quotes.
+  // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
+  --#{$variable-prefix}font-sans-serif: #{inspect($font-family-sans-serif)};
+  --#{$variable-prefix}font-monospace: #{inspect($font-family-monospace)};
+  --#{$variable-prefix}gradient: #{$gradient};
+
+  /****/
+  --gowilds-font-sans-serif: 'kumbh-sans', sans-serif;
+  --gowilds-heading-font-family: 'kumbh-sans', sans-serif;
+
+  --gowilds-theme-color            : #63AB45;
+  --gowilds-theme-color-second     : #F7921E;
+  
+  --font-body-weight              : 400;
+  --font-body-size                : 16px;
+
+  --body-color                    : #82828A;
+  --body-link-color               : #1C231F;
+  --body-link-color-hover         : #63AB45;
+
+  --topbar-bg-color               : #fff;
+  --topbar-color                  : #828892;
+  --topbar-link-color             : #828892;
+  --topbar-link-color-hover       : #6653E8;
+
+  --menu-link-color               : #82828A;
+  --menu-link-color-hover         : #63AB45;
+  --submenu-bg-color              : #ffffff;
+  --submenu-color                 : #82828A;
+  --submenu-link-color            : #82828A;
+  --submenu-link-color-hover      : #63AB45;
+  --topbar-color-icon             : #63AB45;
+
+  --footer-bg-color               : #1D231F; 
+  --footer-color                  : #E1E1E1;
+  --footer-link-color             : #E1E1E1;
+  --footer-link-color-hover       : #63AB45;
+
+  --copyright-bg-color            : #1B1525; 
+  --copyright-color               : #aea8b9;
+  --copyright-link-color          : #aea8b9;
+  --copyright-link-color-hover    : #ffffff;
+
+}

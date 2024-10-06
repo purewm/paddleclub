@@ -1,0 +1,230 @@
+{%
+	set classes = [
+		'node',
+		'node-detail',
+		'node--type-' ~ node.bundle|clean_class,
+		node.isPromoted() ? 'node--promoted',
+		node.isSticky() ? 'node--sticky',
+		not node.isPublished() ? 'node--unpublished',
+		view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+		'clearfix',
+	]
+%}
+{% set conAddress %}{{ node.field_listing_address.value }}{% endset %}
+
+<article{{ attributes.addClass(classes).addClass('node-listing-single') }}>
+	<div class="listing-top">
+		<div id="listing-home" class="listing-gallery gallery-popup before-help-region">
+			{{ content.field_listing_gallery }}
+		</div>
+		
+		<div class="listing-top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="top-left">
+							<h1{{ title_attributes.addClass('post-title') }}>{{ label }}</h1>
+							{% if conAddress %}
+								<div class="address"><i class="flaticon-place"></i>{{ conAddress|striptags }}</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="listing-action">
+							{% if node.field_listing_price.value %}
+								<div class="item-action listing-price">
+									<i class="gwflaticon-best-price"></i>
+									<span class="label">{{'From'|t}}</span>{{ node.field_listing_price.value }}
+								</div>
+							{% endif %}	
+							{% if node.field_listing_phone.value %}
+								<a class="item-action phone" href="tel:{{ node.field_listing_phone.value }}"><i class="flaticon-phone-call"></i><span class="label">{{'Phone'|t}}</span>{{ node.field_listing_phone.value }}</a>
+							{% endif %}
+							<div class="item-action category"><i class="gwflaticon-travel"></i><span class="label">{{'Category'|t}}</span>{{ content.field_listing_category }}</div>
+						</div>
+					</div>
+				</div>
+			</div>    
+		</div> 
+	</div>  
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+				<div class="listing-content-main">
+					
+					<div class="listing-description" id="listing-description">
+						{% if content.body|render %}
+							<div class="block-content">
+								{{ content.body }}
+							</div>
+						{% endif %} 
+						{% if content.field_listing_included|render or content.field_listing_exclude %}
+							<div class="listing-in-ex">
+								<h4 class="block-title">{{ 'Included/Exclude'|t }}</h4>
+								<div class="block-content">
+									<div class="row">
+										<div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12">
+											<div class="type-included">
+												{{ content.field_listing_included }}
+											</div>
+										</div>
+										<div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12">
+											<div class="type-exclude">
+												{{ content.field_listing_exclude }}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>  
+						{% endif %} 
+					</div>  
+
+					{% if content.field_listing_amenities|render %}
+						<div class="listing-info-block listing-amenties" id="listing-amenties">
+							<h3 class="title">{{ 'Listing Amenities'|t }}</h3>
+							<div class="block-content">
+								{{ content.field_listing_amenities }}
+							</div>  
+						</div> 
+					{% endif %}  
+
+					<div class="listing-info-block listing-plan">
+						<h3 class="title">{{'Tour Plan'|t}}</h3>
+						{{ content.field_listing_description }}
+					</div>
+
+					<div class="listing-info-block lising-map">
+						<h3 class="title">{{'Location'|t}}</h3>
+        		<div id="map_canvas_event" class="map_canvas" style="width:100%; height:450px;"></div>
+						
+					</div>
+
+
+					<div class="listing-info-block listing-video" id="listing-video">
+						<h3 class="title">{{ 'Video'|t }}</h3>
+						<div class="block-content">
+							{{ listing_video|raw }}
+						</div>  
+					</div>
+
+					{% if content.field_listing_tags|render %}
+						<div class="listing-info-block listing-tags" id="listing-video">
+							<h3 class="title">{{ 'Tags'|t }}</h3>
+							<div class="block-content">
+								{{ content.field_listing_tags }}
+							</div>
+						</div>
+					{% endif %}
+
+					{% if content.comment|render %}
+						<div class="listing-info-block listing-comment" id="listing-comment">
+							<div class="block-content">
+								<div id="node-single-comment">
+									{{ content.comment }}
+								</div>
+							</div>
+						</div>
+					{% endif %}  
+
+				</div>  
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+				<div class="listing-content-main listing-sidebar">
+
+					{{ listing_sidebar }}
+
+					<div class="lt-block-second business-info">
+						<h3 class="title">{{ 'Tour Contact'|t }} </h3>
+						<div class="block-content">
+							<ul class="business-info">
+								{% if conAddress %}
+									<li><span class="address"><i class="icon la la-map"></i>{{ conAddress|striptags }}</span></li>
+								{% endif %}
+
+								{% if content.field_listing_email|render %}
+									<li><a href="mailto:{{node.field_listing_email.value}}">
+										<i class="icon la la-envelope"></i>{{ node.field_listing_email.value }}
+									</a></li>
+								{% endif %}
+
+								{% if content.field_listing_phone|render %}
+									<li><i class="icon la la-phone"></i>{{ node.field_listing_phone.value }}</li>
+								{% endif %}  
+
+								{% if content.field_listing_website|render %}
+									<li><span><i class="icon la la-globe"></i>{{ node.field_listing_website.value }}</span></li>
+								{% endif %}  
+							</ul>
+
+							<ul class="listing-socials">
+								{{ content.field_listing_social }}
+
+							</ul>
+						</div>  
+					</div>
+
+					<div class="lt-block-second business-info">
+						<h3 class="title">{{ 'Tour Information'|t }} </h3>
+						<div class="block-content">
+							{% if content.field_listing_max_guests|render %}
+								<div class="item-info">
+									<span>{{ 'Max Guests'|t }}</span>
+									<i class="las la-user-friends"></i>
+									{{ node.field_listing_max_guests.value }}
+								</div>
+							{% endif %}
+
+							{% if content.field_listing_min_age|render %}
+								<div class="item-info">
+									<span>{{ 'Min Age'|t }}</span>
+									<i class="flaticon-user"></i>
+									{{ node.field_listing_min_age.value }}
+								</div>
+							{% endif %}
+
+							{% if content.field_listing_language|render %}
+								<div class="item-info">
+									<span>{{ 'Languages Support'|t }}</span>
+									<i class=" flaticon-global-1"></i>
+									{{ node.field_listing_language.value }}
+								</div>
+							{% endif %}
+						</div>  
+					</div>
+
+
+
+				</div>  
+
+			</div>
+		</div>
+	</div>  
+</article>
+
+
+  {% set link = node.field_event_map.value %}
+    {% set style_map = '[{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]' %}
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        var stmapdefault = '{{node.field_listing_map.lat}}, {{node.field_listing_map.lon}}';
+        var marker = {position:stmapdefault}
+        var content = '{{node.title.value}}';
+        jQuery('#map_canvas_event').gmap({
+          'scrollwheel':false,
+          'zoom': 14,
+          'center': stmapdefault,
+          'mapTypeId':google.maps.MapTypeId.ROADMAP,
+          'styles': {{ style_map|raw }},
+          'callback': function() {
+             var self = this;
+             self.addMarker(marker).click(function(){
+                if(content){
+                   self.openInfoWindow({'content': content}, self.instance.markers[0]);
+                }                     
+             });
+          },
+          panControl: true
+        });
+      });
+    </script>
