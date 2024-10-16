@@ -9,69 +9,61 @@
 Icon?
 .Trashes
 
-# Ignore Composer vendor directory
+# Composer Dependencies
 /vendor/
 
-# Track all individual site directories but exclude specific subdirectories like `files`
-# This ensures we track critical files (settings.php, etc.)
-/web/sites/*/files/         # Ignore user-uploaded files
-/web/sites/*/private/       # Ignore private files
-/web/sites/*/translations/  # Ignore translations
-/web/sites/*/drush-backups/ # Ignore Drush backups
+# Drupal Files and Caches
+/private/
+/web/sites/*/files/           
+/web/sites/*/private/         
+/web/sites/*/translations/    
+/web/sites/*/drush-backups/   
+/web/sites/*/files/php/       
+/web/sites/*/files/twig/      
+/web/sites/*/files/js/        
+/web/sites/*/files/css/       
+/web/sites/*/files/styles/    
 
-# Ignore temporary or development-specific settings but track site folders
-/web/sites/*/settings.local.php
-/web/sites/*/services.local.yml
+# Site-specific Configuration
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php  
+/web/sites/*/services.local.yml  
 
-# Keep `sites.php` tracked for multisite configuration
-!web/sites/sites.php
+# Ensure Critical Configuration is Tracked
+!web/sites/sites.php  
 
-# DDEV-specific files
+# DDEV Files and Configs
 /.ddev/
 /.ddev/db_snapshots/
 /.ddev/docker-compose*
+!.ddev/config.template.yaml  
 
-# Keep DDEV config template
-!.ddev/config.template.yaml
+# IDE and Editor Files
+.vscode/
+.idea/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Backup and Export Files
+# Temporary and Backup Files
+/tmp/
 *.sql
 *.tar.gz
 *.zip
-
-# Development tools, caches, and IDEs
-/.env
-.env.*
-.vscode/
-/.idea/
-/node_modules/
-/npm-debug.log*
-/yarn-debug.log*
-/yarn-error.log*
-
-# Temporary or cache files from Drupal
-/web/sites/default/files/php/
-/web/sites/default/files/js/
-/web/sites/default/files/css/
-/web/sites/default/files/styles/
-/tmp/
-
-# Logs and log files
-/logs/
-/*.log
-
-# Ignore SASS cache
 .sass-cache/
-
-# Temporary editor and backup files
 *~
 *.swp
 *.swo
 *.bak
 
-# Orbstack-generated files
+# Orbstack Files
 /.orb/
 
-# Ignore Test Output and Debug Files
+# Logs
+/logs/
+*.log
+
+# Test Output and Debug Files
 /test_output/
 /*.test.result
