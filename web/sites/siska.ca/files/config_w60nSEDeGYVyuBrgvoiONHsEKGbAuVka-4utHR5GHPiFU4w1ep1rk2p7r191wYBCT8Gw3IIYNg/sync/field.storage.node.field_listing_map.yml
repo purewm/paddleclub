@@ -1,0 +1,21 @@
+uuid: 788056cb-dcbd-4243-9406-3d11cc70661e
+langcode: en
+status: true
+dependencies:
+  module:
+    - google_map_field
+    - node
+_core:
+  default_config_hash: PeILF_yuZfkAfDZ_LB6DuiNrs2xge7UrZw83p-bM2qY
+id: node.field_listing_map
+field_name: field_listing_map
+entity_type: node
+type: google_map_field
+settings: {  }
+module: google_map_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

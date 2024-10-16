@@ -1,0 +1,29 @@
+uuid: 9e2ce498-d58c-4103-b51f-808b37a0c861
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4a1ca12f-0764-40bd-a88c-a26020c92ea3'
+  module:
+    - block_content
+    - gavias_hook_themer
+  theme:
+    - gowilds_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: gowilds_sub_topbarlinks
+theme: gowilds_sub
+region: topbar_right
+weight: -15
+provider: null
+plugin: 'block_content:4a1ca12f-0764-40bd-a88c-a26020c92ea3'
+settings:
+  id: 'block_content:4a1ca12f-0764-40bd-a88c-a26020c92ea3'
+  label: 'Topbar Links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

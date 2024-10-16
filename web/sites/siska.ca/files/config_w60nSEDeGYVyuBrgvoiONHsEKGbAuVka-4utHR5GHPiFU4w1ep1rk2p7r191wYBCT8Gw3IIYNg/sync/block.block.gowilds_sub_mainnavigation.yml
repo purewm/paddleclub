@@ -1,0 +1,29 @@
+uuid: 95787f5b-1a84-46fd-a149-5a8f568ea03f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - gavias_hook_themer
+    - system
+  theme:
+    - gowilds_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: gowilds_sub_mainnavigation
+theme: gowilds_sub
+region: main_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

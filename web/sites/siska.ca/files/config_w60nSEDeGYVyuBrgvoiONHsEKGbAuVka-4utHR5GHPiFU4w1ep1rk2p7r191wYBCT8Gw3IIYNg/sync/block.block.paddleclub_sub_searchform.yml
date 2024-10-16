@@ -1,0 +1,21 @@
+uuid: 3386058b-6a14-4776-923c-469f1f7055ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - paddleclub_sub
+id: paddleclub_sub_searchform
+theme: paddleclub_sub
+region: search
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

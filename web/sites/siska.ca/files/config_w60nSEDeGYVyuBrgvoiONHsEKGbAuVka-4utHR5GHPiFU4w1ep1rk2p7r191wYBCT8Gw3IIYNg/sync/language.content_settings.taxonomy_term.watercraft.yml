@@ -1,0 +1,11 @@
+uuid: 16a806b2-1715-4af7-845e-137cdc99bffb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.watercraft
+id: taxonomy_term.watercraft
+target_entity_type_id: taxonomy_term
+target_bundle: watercraft
+default_langcode: site_default
+language_alterable: false

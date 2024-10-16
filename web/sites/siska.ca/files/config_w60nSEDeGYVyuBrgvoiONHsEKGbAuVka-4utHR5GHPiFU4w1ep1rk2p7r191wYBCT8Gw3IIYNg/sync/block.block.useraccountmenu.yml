@@ -1,0 +1,29 @@
+uuid: 71682f22-795e-42b8-ab44-bb63447e0fc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - gavias_hook_themer
+    - system
+  theme:
+    - gowilds_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: useraccountmenu
+theme: gowilds_sub
+region: user
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

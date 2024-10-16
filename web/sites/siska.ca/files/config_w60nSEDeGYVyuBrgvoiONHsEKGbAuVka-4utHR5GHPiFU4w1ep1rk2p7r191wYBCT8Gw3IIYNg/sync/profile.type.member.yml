@@ -1,0 +1,12 @@
+uuid: 91811c45-9f7f-4194-9dd6-5881977290f5
+langcode: en
+status: true
+dependencies: {  }
+id: member
+label: Member
+display_label: ''
+multiple: true
+registration: false
+roles: {  }
+allow_revisions: false
+new_revision: false

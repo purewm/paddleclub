@@ -1,0 +1,11 @@
+uuid: 3b27b8b3-6136-42c7-9c15-934bc12d5081
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YakyNrmQXDUUXMiBuoshbhPght_Sk-AQIGOSKh1SMK4
+name: 'Listing Amenities'
+vid: amenities
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,45 @@
+uuid: 1a472d32-c6a9-41a0-9031-10fed5e88518
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_pg_social_icon
+field_name: field_pg_social_icon
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'fa-brands fa-facebook'
+      label: Facebook
+    -
+      value: 'fa-brands fa-twitter'
+      label: Twitter
+    -
+      value: 'fa-brands fa-instagram'
+      label: Instagram
+    -
+      value: 'fa-brands fa-linkedin'
+      label: Linkedin
+    -
+      value: 'fa-brands fa-youtube'
+      label: Youtube
+    -
+      value: 'fa-brands fa-vimeo'
+      label: Vimeo
+    -
+      value: 'fa-brands fa-behance'
+      label: Behance
+    -
+      value: 'fa-brands fa-pinterest'
+      label: Pinterest
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

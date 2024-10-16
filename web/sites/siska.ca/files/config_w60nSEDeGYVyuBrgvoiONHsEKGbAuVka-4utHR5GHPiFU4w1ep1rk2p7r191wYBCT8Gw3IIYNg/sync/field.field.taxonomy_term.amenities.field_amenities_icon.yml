@@ -1,0 +1,21 @@
+uuid: 414b5e7c-707b-4f0f-94d8-12aae0de8d2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_amenities_icon
+    - taxonomy.vocabulary.amenities
+_core:
+  default_config_hash: WwzJaBWVozc3qTR7hDaRsqKN0P5ZVa5UpjOyqOCLrxU
+id: taxonomy_term.amenities.field_amenities_icon
+field_name: field_amenities_icon
+entity_type: taxonomy_term
+bundle: amenities
+label: 'Amenities icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: c1ebc61c-f700-4d14-b30a-180d4d34254a
+langcode: en
+status: true
+dependencies:
+  module:
+    - mailchimp_signup
+  theme:
+    - gowilds
+id: gowilds_mailchimpsubscriptionformsubscribenewsletter_2
+theme: gowilds
+region: other
+weight: 0
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:subscribe_newsletter'
+settings:
+  id: 'mailchimp_signup_subscribe_block:subscribe_newsletter'
+  label: 'Subscribe Newsletter'
+  label_display: '0'
+  provider: mailchimp_signup
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: e57d7ede-b075-4182-a2ad-eba5b421b1a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - gavias_hook_themer
+    - gavias_pagebuilder
+    - system
+  theme:
+    - gowilds_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: gowilds_sub_gaviascontentbuilderfooter_2
+theme: gowilds_sub
+region: footer
+weight: 0
+provider: null
+plugin: 'gavias_pagebuilder_block:gavias_pagebuilder_block____1'
+settings:
+  id: 'gavias_pagebuilder_block:gavias_pagebuilder_block____1'
+  label: 'Gavias Content Builder - Footer'
+  label_display: '0'
+  provider: gavias_pagebuilder
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/1\r\n/node/3\r\n/node/6\r\n/node/69"

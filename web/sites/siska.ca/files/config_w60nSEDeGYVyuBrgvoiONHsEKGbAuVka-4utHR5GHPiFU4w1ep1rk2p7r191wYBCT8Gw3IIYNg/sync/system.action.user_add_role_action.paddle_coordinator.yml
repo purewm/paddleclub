@@ -1,0 +1,14 @@
+uuid: 62040357-a838-47c6-887a-b48838b588ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.paddle_coordinator
+  module:
+    - user
+id: user_add_role_action.paddle_coordinator
+label: 'Add the Paddle Coordinator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: paddle_coordinator

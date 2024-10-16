@@ -1,0 +1,9 @@
+uuid: 8b3228ce-82d0-4de4-b7bf-de2f9a60f265
+langcode: en
+status: true
+dependencies: {  }
+id: paddle_coordinator
+label: 'Paddle Coordinator'
+weight: 4
+is_admin: null
+permissions: {  }

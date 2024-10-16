@@ -1,0 +1,20 @@
+uuid: 381c675e-5098-4d3d-bb63-2792b08479c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_paddle_category
+field_name: field_paddle_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

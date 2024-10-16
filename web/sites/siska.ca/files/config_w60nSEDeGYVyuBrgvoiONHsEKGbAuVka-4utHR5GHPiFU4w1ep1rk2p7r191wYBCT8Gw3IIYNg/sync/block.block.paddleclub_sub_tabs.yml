@@ -1,0 +1,20 @@
+uuid: 6382b043-764e-4c30-aaee-015c65a85048
+langcode: en
+status: true
+dependencies:
+  theme:
+    - paddleclub_sub
+id: paddleclub_sub_tabs
+theme: paddleclub_sub
+region: help
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

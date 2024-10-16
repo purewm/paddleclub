@@ -1,0 +1,29 @@
+uuid: f64dc1d0-bd31-4240-ada7-e10f919945b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paddle_skills_required
+    - node.type.paddle
+    - taxonomy.vocabulary.paddle_skills
+id: node.paddle.field_paddle_skills_required
+field_name: field_paddle_skills_required
+entity_type: node
+bundle: paddle
+label: 'Skills Required'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      paddle_skills: paddle_skills
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

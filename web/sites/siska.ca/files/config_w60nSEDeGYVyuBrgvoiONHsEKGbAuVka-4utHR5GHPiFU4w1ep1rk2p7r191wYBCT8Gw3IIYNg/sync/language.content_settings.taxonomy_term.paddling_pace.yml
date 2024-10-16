@@ -1,0 +1,11 @@
+uuid: de33389e-736f-49a5-8991-a33a89392ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paddling_pace
+id: taxonomy_term.paddling_pace
+target_entity_type_id: taxonomy_term
+target_bundle: paddling_pace
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,25 @@
+uuid: 7c901ccf-85df-480a-9fd3-171f4654aa26
+langcode: en
+status: true
+dependencies:
+  module:
+    - dropdown_language
+    - gavias_hook_themer
+  theme:
+    - paddleclub_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: paddleclub_sub_dropdownlanguage
+theme: paddleclub_sub
+region: topbar_right
+weight: -14
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  label_display: '0'
+  provider: dropdown_language
+  labels: null
+visibility: {  }

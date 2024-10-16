@@ -1,0 +1,22 @@
+_core:
+  default_config_hash: exRaKE0s6uZbfQrl_2WFEcTlc_1t81xEqCLuCCteUSk
+langcode: en
+minimum_single: 3
+minimum_multiple: 3
+disable_search_threshold: 3
+minimum_width: null
+max_shown_results: null
+use_relative_width: false
+jquery_selector: 'select:visible, select#edit-field-listing-category-target-id'
+search_contains: false
+disable_search: false
+allow_single_deselect: false
+disabled_themes:
+  claro: '0'
+  olivero: '0'
+  gowilds: '0'
+  gowilds_sub: '0'
+chosen_include: 1
+placeholder_text_multiple: 'Choose some options'
+placeholder_text_single: 'Choose an option'
+no_results_text: 'No results match'

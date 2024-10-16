@@ -1,0 +1,25 @@
+uuid: bc5f54df-d641-413a-85df-07cac314dbc7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a87cb642-bb80-4bd8-9bb0-ed5e2d4da5e0'
+  module:
+    - block_content
+  theme:
+    - paddleclub_sub
+id: paddleclub_sub_topbar
+theme: paddleclub_sub
+region: topbar
+weight: 0
+provider: null
+plugin: 'block_content:a87cb642-bb80-4bd8-9bb0-ed5e2d4da5e0'
+settings:
+  id: 'block_content:a87cb642-bb80-4bd8-9bb0-ed5e2d4da5e0'
+  label: Topbar
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

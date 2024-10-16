@@ -1,0 +1,21 @@
+uuid: c204a39d-d15a-4daf-9b08-853b3d6e0d9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - dropdown_language
+  theme:
+    - gowilds
+id: gowilds_dropdownlanguage_3
+theme: gowilds
+region: topbar_right
+weight: -10
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  label_display: '0'
+  provider: dropdown_language
+  labels: {  }
+visibility: {  }

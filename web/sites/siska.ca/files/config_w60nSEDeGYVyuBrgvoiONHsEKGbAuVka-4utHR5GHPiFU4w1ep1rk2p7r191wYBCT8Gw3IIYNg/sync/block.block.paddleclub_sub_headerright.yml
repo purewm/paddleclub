@@ -1,0 +1,29 @@
+uuid: 2552b19d-81b0-4b02-af63-43cec035e329
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d8ecbbd4-472d-4597-9013-8ab48fea3aa9'
+  module:
+    - block_content
+    - gavias_hook_themer
+  theme:
+    - paddleclub_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: paddleclub_sub_headerright
+theme: paddleclub_sub
+region: header_right
+weight: 0
+provider: null
+plugin: 'block_content:d8ecbbd4-472d-4597-9013-8ab48fea3aa9'
+settings:
+  id: 'block_content:d8ecbbd4-472d-4597-9013-8ab48fea3aa9'
+  label: 'Header right'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

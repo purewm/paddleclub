@@ -1,0 +1,20 @@
+uuid: 1b81c3ca-b828-40be-a400-3423fe8e29a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_paddle_date_time
+field_name: field_paddle_date_time
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

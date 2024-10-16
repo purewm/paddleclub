@@ -1,0 +1,21 @@
+uuid: f1449bcf-8793-4b9a-9bc6-09afc5b6935f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paddle_date_time
+    - node.type.paddle
+  module:
+    - datetime
+id: node.paddle.field_paddle_date_time
+field_name: field_paddle_date_time
+entity_type: node
+bundle: paddle
+label: 'Date and Time'
+description: 'Enter a start date and time, and an optional ending date and time.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

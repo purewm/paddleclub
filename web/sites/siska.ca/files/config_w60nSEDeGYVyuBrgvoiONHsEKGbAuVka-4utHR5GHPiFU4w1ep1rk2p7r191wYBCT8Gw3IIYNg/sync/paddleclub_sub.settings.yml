@@ -1,0 +1,23 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+enable_customize: '1'
+logo_width: ''
+logo_padding_top: ''
+logo_padding_bottom: ''
+listing_search_action: tours-page
+listing_search_actionen: tours-page
+listing_search_actionfr: tours-page
+listing_search_actionde: tours-page
+sticky_menu: '0'
+site_layout: wide
+preloader: '0'
+google_key: ''
+default_header: header
+customize_css: ''

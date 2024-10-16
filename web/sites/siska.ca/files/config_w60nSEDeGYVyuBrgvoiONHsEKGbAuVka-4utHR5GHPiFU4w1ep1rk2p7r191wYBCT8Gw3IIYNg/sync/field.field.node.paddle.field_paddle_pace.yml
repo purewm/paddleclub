@@ -1,0 +1,33 @@
+uuid: 0411e324-4144-4c3c-81f9-927afa2d254f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paddle_pace
+    - node.type.paddle
+    - taxonomy.vocabulary.paddling_pace
+  content:
+    - 'taxonomy_term:paddling_pace:b3c940ac-a04c-41c1-9430-4ff9ca7ec70a'
+id: node.paddle.field_paddle_pace
+field_name: field_paddle_pace
+entity_type: node
+bundle: paddle
+label: Pace
+description: 'Set the intended speed for this paddle.'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: b3c940ac-a04c-41c1-9430-4ff9ca7ec70a
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      paddling_pace: paddling_pace
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

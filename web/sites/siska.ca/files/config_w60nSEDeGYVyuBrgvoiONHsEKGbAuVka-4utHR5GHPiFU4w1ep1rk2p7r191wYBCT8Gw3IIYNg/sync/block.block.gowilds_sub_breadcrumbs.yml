@@ -1,0 +1,20 @@
+uuid: 672a61ba-eefd-4dbb-9d3e-66d2c8c6336b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gowilds_sub
+id: gowilds_sub_breadcrumbs
+theme: gowilds_sub
+region: breadcrumbs
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

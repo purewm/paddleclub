@@ -1,0 +1,20 @@
+uuid: 7e081c46-d1ab-481d-9b28-511c335482fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gowilds
+id: gowilds_messages
+theme: gowilds
+region: help
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

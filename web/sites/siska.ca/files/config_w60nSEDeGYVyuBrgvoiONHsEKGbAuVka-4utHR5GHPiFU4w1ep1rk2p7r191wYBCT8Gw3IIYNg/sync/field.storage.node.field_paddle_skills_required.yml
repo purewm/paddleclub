@@ -1,0 +1,20 @@
+uuid: e7386b34-6f46-4232-901a-3b96f089bc58
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_paddle_skills_required
+field_name: field_paddle_skills_required
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

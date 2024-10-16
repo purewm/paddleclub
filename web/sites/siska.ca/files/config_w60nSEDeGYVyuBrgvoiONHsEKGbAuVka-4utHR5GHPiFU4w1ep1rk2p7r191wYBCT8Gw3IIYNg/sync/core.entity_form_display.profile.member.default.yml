@@ -1,0 +1,40 @@
+uuid: a9975539-efdc-43f4-aaf0-bee647496c37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.member.field_contact_number
+    - field.field.profile.member.field_first_name
+    - field.field.profile.member.field_last_name
+    - profile.type.member
+id: profile.member.default
+targetEntityType: profile
+bundle: member
+mode: default
+content:
+  field_contact_number:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_first_name:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_last_name:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  is_default: true

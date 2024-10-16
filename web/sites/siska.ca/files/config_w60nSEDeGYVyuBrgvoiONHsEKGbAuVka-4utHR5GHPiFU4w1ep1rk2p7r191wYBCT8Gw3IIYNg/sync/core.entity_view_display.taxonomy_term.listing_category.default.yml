@@ -1,0 +1,24 @@
+uuid: b832c086-919b-47bc-a777-bd643b66c492
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.listing_category
+  module:
+    - text
+_core:
+  default_config_hash: Rf8f6YpPytyWgA1zPlxT9nAzIoe1NNAU1M_aFm6jmBM
+id: taxonomy_term.listing_category.default
+targetEntityType: taxonomy_term
+bundle: listing_category
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

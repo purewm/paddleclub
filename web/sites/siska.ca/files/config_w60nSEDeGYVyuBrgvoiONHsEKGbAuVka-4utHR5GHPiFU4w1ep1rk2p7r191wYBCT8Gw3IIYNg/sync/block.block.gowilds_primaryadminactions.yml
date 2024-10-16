@@ -1,0 +1,18 @@
+uuid: 092a3dde-d015-4020-aeb6-4e091c4d24fe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gowilds
+id: gowilds_primaryadminactions
+theme: gowilds
+region: help
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: b392aa3d-5525-4b37-a85f-644d5f50f6ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social.field_pg_social_icon
+    - field.field.paragraph.social.field_pg_social_link
+    - paragraphs.paragraphs_type.social
+  module:
+    - options
+id: paragraph.social.default
+targetEntityType: paragraph
+bundle: social
+mode: default
+content:
+  field_pg_social_icon:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pg_social_link:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

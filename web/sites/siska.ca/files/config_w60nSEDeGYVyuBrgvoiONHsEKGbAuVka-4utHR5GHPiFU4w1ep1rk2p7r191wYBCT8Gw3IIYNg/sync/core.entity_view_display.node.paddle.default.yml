@@ -1,0 +1,121 @@
+uuid: 6508fc03-3715-428d-bff3-935c7934f160
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.paddle.body
+    - field.field.node.paddle.field_paddle_ammenities
+    - field.field.node.paddle.field_paddle_category
+    - field.field.node.paddle.field_paddle_date_time
+    - field.field.node.paddle.field_paddle_pace
+    - field.field.node.paddle.field_paddle_primary_leader
+    - field.field.node.paddle.field_paddle_secondary_leader
+    - field.field.node.paddle.field_paddle_skills
+    - field.field.node.paddle.field_paddle_skills_required
+    - field.field.node.paddle.field_paddle_water_type
+    - field.field.node.paddle.field_paddle_watercraft
+    - node.type.paddle
+  module:
+    - datetime
+    - text
+    - user
+id: node.paddle.default
+targetEntityType: node
+bundle: paddle
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_paddle_ammenities:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_paddle_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_paddle_date_time:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_paddle_pace:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_paddle_primary_leader:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_paddle_secondary_leader:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_paddle_skills:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_paddle_skills_required:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_paddle_water_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_paddle_watercraft:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

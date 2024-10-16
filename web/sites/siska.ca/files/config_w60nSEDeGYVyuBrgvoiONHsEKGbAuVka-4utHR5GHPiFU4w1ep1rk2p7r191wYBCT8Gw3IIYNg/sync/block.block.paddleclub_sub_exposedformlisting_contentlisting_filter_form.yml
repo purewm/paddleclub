@@ -1,0 +1,27 @@
+uuid: 05a553a3-495f-45bf-9410-9bd6f5fdbb14
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.listing_content
+  module:
+    - gavias_hook_themer
+    - views
+  theme:
+    - paddleclub_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: paddleclub_sub_exposedformlisting_contentlisting_filter_form
+theme: paddleclub_sub
+region: other
+weight: -13
+provider: null
+plugin: 'views_exposed_filter_block:listing_content-listing_filter_form'
+settings:
+  id: 'views_exposed_filter_block:listing_content-listing_filter_form'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility: {  }

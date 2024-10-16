@@ -1,0 +1,21 @@
+uuid: b029a168-1bc4-43a9-b8dc-9622fcd34045
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_exclude
+    - node.type.listing
+  module:
+    - text
+id: node.listing.field_listing_exclude
+field_name: field_listing_exclude
+entity_type: node
+bundle: listing
+label: 'Listing Exclude'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: e3cb66dd-27d1-4460-9095-fa52a0d17065
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_listing_exclude
+field_name: field_listing_exclude
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

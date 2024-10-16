@@ -1,0 +1,25 @@
+uuid: cd040759-d233-4c6e-853d-3e4efbe954b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - dropdown_language
+    - gavias_hook_themer
+  theme:
+    - gowilds_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: dropdownlanguage
+theme: gowilds_sub
+region: topbar_right
+weight: -14
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  label_display: '0'
+  provider: dropdown_language
+  labels: null
+visibility: {  }

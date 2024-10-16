@@ -1,0 +1,25 @@
+uuid: b04c7bbd-b597-4494-8f36-85a8913c74d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a87cb642-bb80-4bd8-9bb0-ed5e2d4da5e0'
+  module:
+    - block_content
+  theme:
+    - gowilds_sub
+id: gowilds_sub_topbar
+theme: gowilds_sub
+region: topbar
+weight: 0
+provider: null
+plugin: 'block_content:a87cb642-bb80-4bd8-9bb0-ed5e2d4da5e0'
+settings:
+  id: 'block_content:a87cb642-bb80-4bd8-9bb0-ed5e2d4da5e0'
+  label: Topbar
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

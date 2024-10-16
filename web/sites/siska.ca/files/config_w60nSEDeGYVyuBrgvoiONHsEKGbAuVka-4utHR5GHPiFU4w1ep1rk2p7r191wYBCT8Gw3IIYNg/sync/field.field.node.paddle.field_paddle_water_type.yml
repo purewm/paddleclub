@@ -1,0 +1,29 @@
+uuid: 8be79112-4a16-40d2-a9f7-57bb24cdaca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paddle_water_type
+    - node.type.paddle
+    - taxonomy.vocabulary.water_type
+id: node.paddle.field_paddle_water_type
+field_name: field_paddle_water_type
+entity_type: node
+bundle: paddle
+label: 'Water Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      water_type: water_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

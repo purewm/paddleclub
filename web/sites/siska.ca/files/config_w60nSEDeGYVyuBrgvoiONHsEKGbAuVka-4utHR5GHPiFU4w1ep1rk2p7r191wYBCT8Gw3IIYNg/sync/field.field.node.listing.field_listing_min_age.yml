@@ -1,0 +1,19 @@
+uuid: 7e73bf74-488a-43bf-9483-6304e8007bab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_min_age
+    - node.type.listing
+id: node.listing.field_listing_min_age
+field_name: field_listing_min_age
+entity_type: node
+bundle: listing
+label: 'Listing Min Age'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

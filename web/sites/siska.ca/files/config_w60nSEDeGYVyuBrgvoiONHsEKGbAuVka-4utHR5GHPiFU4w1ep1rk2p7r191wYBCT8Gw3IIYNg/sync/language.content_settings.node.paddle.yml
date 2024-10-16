@@ -1,0 +1,11 @@
+uuid: bdef3efd-883f-4e4f-aec0-425c0bd63f61
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.paddle
+id: node.paddle
+target_entity_type_id: node
+target_bundle: paddle
+default_langcode: site_default
+language_alterable: false

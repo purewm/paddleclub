@@ -1,0 +1,20 @@
+uuid: 0f0c05c1-e4ac-4cb6-9d3d-19824c8349a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paddleclub_sub
+id: paddleclub_sub_breadcrumbs
+theme: paddleclub_sub
+region: breadcrumbs
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: a2068950-7dbe-419c-aaf7-a3e6b846c303
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - gavias_hook_themer
+    - system
+  theme:
+    - paddleclub_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: paddleclub_sub_mainnavigation
+theme: paddleclub_sub
+region: main_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

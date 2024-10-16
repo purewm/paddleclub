@@ -1,0 +1,20 @@
+uuid: 593ea101-7d7d-4872-b4c7-bc652dfbb58e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paddleclub_sub
+id: paddleclub_sub_mainpagecontent
+theme: paddleclub_sub
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

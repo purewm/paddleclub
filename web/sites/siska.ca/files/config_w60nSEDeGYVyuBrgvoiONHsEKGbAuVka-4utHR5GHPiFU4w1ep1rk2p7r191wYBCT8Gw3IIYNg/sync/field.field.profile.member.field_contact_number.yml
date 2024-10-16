@@ -1,0 +1,24 @@
+uuid: 8dfc7ceb-f357-4608-af06-49cef54441b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_contact_number
+    - profile.type.member
+  module:
+    - profile
+third_party_settings:
+  profile:
+    profile_private: true
+id: profile.member.field_contact_number
+field_name: field_contact_number
+entity_type: profile
+bundle: member
+label: 'Contact Number'
+description: 'This is optional but needed if you are going to be the main contact for any event. This will be private field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

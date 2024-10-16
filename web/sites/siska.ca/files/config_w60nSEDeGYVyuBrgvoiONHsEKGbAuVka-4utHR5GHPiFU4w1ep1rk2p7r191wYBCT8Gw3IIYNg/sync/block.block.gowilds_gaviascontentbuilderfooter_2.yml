@@ -1,0 +1,20 @@
+uuid: 0d329472-3213-4c6d-8912-687d30526e7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - gavias_pagebuilder
+  theme:
+    - gowilds
+id: gowilds_gaviascontentbuilderfooter_2
+theme: gowilds
+region: footer
+weight: 0
+provider: null
+plugin: 'gavias_pagebuilder_block:gavias_pagebuilder_block____1'
+settings:
+  id: 'gavias_pagebuilder_block:gavias_pagebuilder_block____1'
+  label: 'Gavias Content Builder - Footer'
+  label_display: '0'
+  provider: gavias_pagebuilder
+visibility: {  }

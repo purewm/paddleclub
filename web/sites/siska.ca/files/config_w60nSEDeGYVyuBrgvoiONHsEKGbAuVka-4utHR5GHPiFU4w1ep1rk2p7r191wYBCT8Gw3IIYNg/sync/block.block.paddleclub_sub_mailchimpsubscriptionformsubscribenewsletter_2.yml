@@ -1,0 +1,20 @@
+uuid: 6442527b-a07b-4ad9-9bfe-7286421f5567
+langcode: en
+status: true
+dependencies:
+  module:
+    - mailchimp_signup
+  theme:
+    - paddleclub_sub
+id: paddleclub_sub_mailchimpsubscriptionformsubscribenewsletter_2
+theme: paddleclub_sub
+region: other
+weight: -9
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:subscribe_newsletter'
+settings:
+  id: 'mailchimp_signup_subscribe_block:subscribe_newsletter'
+  label: 'Subscribe Newsletter'
+  label_display: '0'
+  provider: mailchimp_signup
+visibility: {  }

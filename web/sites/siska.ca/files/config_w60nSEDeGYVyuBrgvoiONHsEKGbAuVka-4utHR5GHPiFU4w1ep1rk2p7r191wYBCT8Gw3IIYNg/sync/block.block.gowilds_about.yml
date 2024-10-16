@@ -1,0 +1,25 @@
+uuid: 3c9ab9da-91d8-48c1-baf3-6be2aaadaf21
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6d5ade86-9d5b-4f7d-8df0-eab5c3d27e0c'
+  module:
+    - block_content
+  theme:
+    - gowilds
+id: gowilds_about
+theme: gowilds
+region: offcanvas
+weight: 0
+provider: null
+plugin: 'block_content:6d5ade86-9d5b-4f7d-8df0-eab5c3d27e0c'
+settings:
+  id: 'block_content:6d5ade86-9d5b-4f7d-8df0-eab5c3d27e0c'
+  label: About
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

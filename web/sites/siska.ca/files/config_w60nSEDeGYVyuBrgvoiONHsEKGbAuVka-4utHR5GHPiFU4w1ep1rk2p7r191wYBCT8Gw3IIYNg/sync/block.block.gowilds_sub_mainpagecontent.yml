@@ -1,0 +1,20 @@
+uuid: 659d5b2b-dcc8-40d7-b945-10496ad09b67
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gowilds_sub
+id: gowilds_sub_mainpagecontent
+theme: gowilds_sub
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

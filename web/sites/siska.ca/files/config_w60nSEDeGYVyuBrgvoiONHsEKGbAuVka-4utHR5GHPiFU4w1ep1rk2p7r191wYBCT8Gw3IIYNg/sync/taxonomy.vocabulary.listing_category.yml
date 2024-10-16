@@ -1,0 +1,11 @@
+uuid: a77a4122-8a9b-44c3-838e-a2675424c181
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RTJx-5tG2yEn7sN7p3Epzd8hxdhfJkb5pGK0S4wKDnA
+name: 'Listing Category'
+vid: listing_category
+description: null
+weight: 0
+new_revision: false

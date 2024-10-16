@@ -1,0 +1,20 @@
+uuid: 10bc4346-e420-4ba4-b370-149079fc05da
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gowilds_sub
+id: gowilds_sub_tabs
+theme: gowilds_sub
+region: help
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

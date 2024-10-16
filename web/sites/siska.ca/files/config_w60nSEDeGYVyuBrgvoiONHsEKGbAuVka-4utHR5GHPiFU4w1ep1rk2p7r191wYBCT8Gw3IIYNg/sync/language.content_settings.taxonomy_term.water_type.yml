@@ -1,0 +1,11 @@
+uuid: 572b517d-264e-42b2-b4e6-25fdea534cbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.water_type
+id: taxonomy_term.water_type
+target_entity_type_id: taxonomy_term
+target_bundle: water_type
+default_langcode: site_default
+language_alterable: false

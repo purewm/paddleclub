@@ -1,0 +1,18 @@
+uuid: 7fa8afe6-0479-46cf-b7e1-d0a551ea1e58
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Paddle
+type: paddle
+description: 'An on-water event for members.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,25 @@
+uuid: ff1282c4-5da7-4afa-8975-90128d707283
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1c843ac3-312f-4c69-8ff3-5e0dd50a976a'
+  module:
+    - block_content
+  theme:
+    - gowilds_sub
+id: gowilds_sub_pricingvertical
+theme: gowilds_sub
+region: other
+weight: -10
+provider: null
+plugin: 'block_content:1c843ac3-312f-4c69-8ff3-5e0dd50a976a'
+settings:
+  id: 'block_content:1c843ac3-312f-4c69-8ff3-5e0dd50a976a'
+  label: 'Pricing Vertical'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

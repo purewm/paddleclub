@@ -1,0 +1,30 @@
+uuid: 20b34641-af57-4957-acf9-8dce483fde7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.booking_form
+  module:
+    - gavias_hook_themer
+    - webform
+  theme:
+    - gowilds_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: webform_booking
+theme: gowilds_sub
+region: listing_sidebar
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Booking Tour'
+  label_display: visible
+  provider: webform
+  webform_id: booking_form
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

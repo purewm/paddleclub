@@ -1,0 +1,26 @@
+uuid: 0ab854ca-e4b8-47a0-b95d-33608d4a321e
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - webform
+  theme:
+    - gowilds_sub
+id: gowilds_sub_webform
+theme: gowilds_sub
+region: other
+weight: -8
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform - Contact'
+  label_display: '0'
+  provider: webform
+  webform_id: contact
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

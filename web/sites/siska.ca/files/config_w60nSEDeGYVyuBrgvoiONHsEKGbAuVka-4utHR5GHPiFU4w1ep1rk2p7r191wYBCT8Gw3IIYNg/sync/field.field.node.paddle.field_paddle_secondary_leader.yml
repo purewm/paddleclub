@@ -1,0 +1,29 @@
+uuid: c1c50ff4-3321-4542-af04-d4493f28989f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paddle_secondary_leader
+    - node.type.paddle
+    - profile.type.member
+id: node.paddle.field_paddle_secondary_leader
+field_name: field_paddle_secondary_leader
+entity_type: node
+bundle: paddle
+label: 'Secondary Leader'
+description: 'Add a optional second leader if appropriate.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:profile'
+  handler_settings:
+    target_bundles:
+      member: member
+    sort:
+      field: field_last_name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

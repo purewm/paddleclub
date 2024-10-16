@@ -1,0 +1,11 @@
+uuid: 57b641fe-d401-48db-a085-b3cc440f2d2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paddle_category
+id: taxonomy_term.paddle_category
+target_entity_type_id: taxonomy_term
+target_bundle: paddle_category
+default_langcode: site_default
+language_alterable: false

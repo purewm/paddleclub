@@ -1,0 +1,9 @@
+uuid: 689fe8ae-b18b-4536-b8af-1028ec82e5b1
+langcode: en
+status: true
+dependencies: {  }
+id: site_manager
+label: 'Site Manager'
+weight: 3
+is_admin: null
+permissions: {  }

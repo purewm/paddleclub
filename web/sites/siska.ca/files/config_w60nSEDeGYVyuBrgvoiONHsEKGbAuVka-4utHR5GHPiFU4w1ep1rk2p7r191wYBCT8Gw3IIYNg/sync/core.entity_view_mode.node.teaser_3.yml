@@ -1,0 +1,13 @@
+uuid: c4f8c013-f638-449c-a2e8-862180b5b1eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 4QxCbS7X-Nht0DMpMuU9ZDyu5x9m3XwvxXXV6p9A2rc
+id: node.teaser_3
+label: 'Teaser 3'
+description: ''
+targetEntityType: node
+cache: true

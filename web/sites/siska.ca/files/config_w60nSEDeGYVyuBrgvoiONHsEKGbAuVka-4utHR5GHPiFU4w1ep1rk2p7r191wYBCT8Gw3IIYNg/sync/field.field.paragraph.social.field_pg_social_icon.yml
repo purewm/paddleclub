@@ -1,0 +1,21 @@
+uuid: 6ab1b5e6-55c5-49b6-a32d-e53b971bdcb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_social_icon
+    - paragraphs.paragraphs_type.social
+  module:
+    - options
+id: paragraph.social.field_pg_social_icon
+field_name: field_pg_social_icon
+entity_type: paragraph
+bundle: social
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

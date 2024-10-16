@@ -1,0 +1,21 @@
+uuid: 04c150e3-8f79-435d-ae1d-7807229533e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_phone
+    - node.type.listing
+_core:
+  default_config_hash: dma9idbZqZMr8GZhPVaxQnCJcF3bM2igrZVYoHTt5Dk
+id: node.listing.field_listing_phone
+field_name: field_listing_phone
+entity_type: node
+bundle: listing
+label: 'Contact Phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

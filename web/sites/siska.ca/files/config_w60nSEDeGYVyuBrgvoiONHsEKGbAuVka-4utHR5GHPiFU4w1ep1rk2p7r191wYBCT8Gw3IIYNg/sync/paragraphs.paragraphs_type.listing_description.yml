@@ -1,0 +1,10 @@
+uuid: a22eab45-eee3-4552-89f1-7f12369fe8b0
+langcode: en
+status: true
+dependencies: {  }
+id: listing_description
+label: 'Listing Description'
+icon_uuid: null
+icon_default: null
+description: 'Listing plan content.'
+behavior_plugins: {  }

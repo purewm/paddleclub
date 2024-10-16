@@ -1,0 +1,20 @@
+uuid: 9d99495d-3b80-4fb4-89cb-6c6c6cff0317
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paddleclub_sub
+id: paddleclub_sub_messages
+theme: paddleclub_sub
+region: help
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

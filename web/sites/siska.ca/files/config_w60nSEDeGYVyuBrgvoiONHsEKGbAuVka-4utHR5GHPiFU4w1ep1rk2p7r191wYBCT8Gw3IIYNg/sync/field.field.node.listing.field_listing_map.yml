@@ -1,0 +1,38 @@
+uuid: 73e660b5-559e-463a-80f8-a23da331aea2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_map
+    - node.type.listing
+  module:
+    - google_map_field
+_core:
+  default_config_hash: OqmQQ-EANT28X4ZZpPmGhdPLPZs_bNIgS0_GKoTKe6w
+id: node.listing.field_listing_map
+field_name: field_listing_map
+entity_type: node
+bundle: listing
+label: Map
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    preview: ''
+    actions: {  }
+    lat: '51.5123312973236'
+    name: ''
+    lon: '-0.1334831640624543'
+    zoom: '9'
+    type: roadmap
+    width: 100%
+    height: 450px
+    marker: '1'
+    traffic: '0'
+    marker_icon: ''
+    controls: '1'
+    infowindow: ''
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

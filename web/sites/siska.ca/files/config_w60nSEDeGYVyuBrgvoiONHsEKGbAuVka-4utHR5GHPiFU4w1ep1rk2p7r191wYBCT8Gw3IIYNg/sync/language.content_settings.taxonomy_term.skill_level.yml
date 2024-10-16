@@ -1,0 +1,11 @@
+uuid: 5e8314e8-9487-4d2d-941c-c06343a15e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.skill_level
+id: taxonomy_term.skill_level
+target_entity_type_id: taxonomy_term
+target_bundle: skill_level
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,29 @@
+uuid: bcaf43dd-60e7-4e3c-b259-f21e62fbbf6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - gavias_hook_themer
+    - gavias_pagebuilder
+    - system
+  theme:
+    - paddleclub_sub
+third_party_settings:
+  gavias_hook_themer:
+    classes: ''
+id: paddleclub_sub_gaviascontentbuilderfooter_2
+theme: paddleclub_sub
+region: footer
+weight: 0
+provider: null
+plugin: 'gavias_pagebuilder_block:gavias_pagebuilder_block____1'
+settings:
+  id: 'gavias_pagebuilder_block:gavias_pagebuilder_block____1'
+  label: 'Gavias Content Builder - Footer'
+  label_display: '0'
+  provider: gavias_pagebuilder
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/1\r\n/node/3\r\n/node/6\r\n/node/69"
